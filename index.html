@@ -19,6 +19,10 @@
             invia
         </button>
 
+        <p id="risultato_testo">
+
+        </p>
+
         <button>
             Cambia colore
         </button>
@@ -34,7 +38,11 @@
 
     <script>
         function mostraNome() {
-            //codice, ernesto
+            
+        let testo = document.getElementById("mioInput").value;
+  
+  
+        document.getElementById("risultato_testo").innerText = "Ciao, " + testo;
         }
     </script>
 </body>
