@@ -8,7 +8,7 @@ Questo sito riesce:
 
 In questo progetto si sono occupati:
 - Yehor - scrivere HTML da zero, fare JavaScript e documentazione README
-- Ernesto - fare CSS, aiutare al collega con il JavaScript e con la documentazione README 
+- Ernesto - fare CSS, aiutare al collega con il JavaScript e con la documentazione README
 Entrambi hanno partecipato alla collegamento del progetto al GitHub
 
 Abbiamo usato HTML, CSS, JavaScript, Git e GitHub
