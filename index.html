@@ -14,36 +14,64 @@
 
         <input type="text" placeholder="Nome" id="mioInput">
 
-        <br>
-        <button class="" onclick="mostraNome()">
-            invia
-        </button>
-
+        
         <p id="risultato_testo">
-
+            
         </p>
 
-        <button>
+        <br>
+        <button class="" onclick="mostraNome()">
+            Mostra benvenuto 
+        </button>
+
+        <button onclick="cambiaColore()">
             Cambia colore
         </button>
 
-        <button>
-            Mostra benvenuto
+        <button onclick="coloreDefault()">
+            Reset schermo
         </button>
 
-        <p>
-            by Ernesto and Yehor
-        </p>
+        <div class="autors">
+
+            by Ernesto and Yehor <br>
+            1th of September 2026
+        </div>
+        
     </div>
 
     <script>
-        function mostraNome() {
-            
-        let testo = document.getElementById("mioInput").value;
-  
-  
-        document.getElementById("risultato_testo").innerText = "Ciao, " + testo;
+            function mostraNome() {
+            let testo = document.getElementById("mioInput").value.trim();
+    
+            let paragrafo = document.getElementById("risultato_testo");
+
+            if (testo === "") {
+                paragrafo.innerText = "Inserisci qualcosa!";
+        
+            } 
+            else {
+               paragrafo.innerText = "Ciao, " + testo;
+            }
+
+                                }
+
+
+        
+        const colori = ["green", "red", "blue", "orange"];
+        let click = 0;
+
+        function cambiaColore() {
+            document.body.style.backgroundColor = colori[click % colori.length];
+            click++; 
         }
+
+
+        function coloreDefault() {
+            
+            document.body.style.backgroundColor = "white"            
+        }
+    
     </script>
 </body>
 </html>
